@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>聚风尚主页</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script type="text/javascript" src="js/jquery-1.12.4.js" ></script>
+		<script type="text/javascript" src="js/aJax.js" ></script>
+		<script type="text/javascript" src="js/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="js/strOper.js" ></script>
+		<script type="text/javascript" src="js/upshopgoods.js" ></script>
+	</head>
+	<body>
+		<div id="head_back">
+			<div class="container">
+				<div class="box1200">
+					<div id="logo">
+						<a href="http://www.jufengshang.com/"><img src="images/logo.gif" /></a>
+					</div>
+					<div id="heading">
+						<div class="top-nav">
+							<ul>
+								<li class="ewm_li">
+									<a href="javascript:;"><span class="coll"></span></a>
+									<a href="javascript:;"><span class="code"></span></a>
+									<div class="weixin_hide">
+										<img class="hide_img" src="images/weixin2.png" />
+									</div>
+								</li>
+								<li class="toplogin">
+									<p>您好!请 [
+										<a href="#">登录</a>|
+										<a href="http://127.0.0.1:8020/jufengshang/html/zhuce.html?">注册</a>] (赠送68元)
+										<a href="#">我的订单</a>
+									</p>
+								</li>
+								<li>
+									<p class="telphone">4000508013</p>
+								</li>
+								<li class="end">
+									<div class="top-cart">
+										<a class="shopbag" href="html/shopcart.html">购物袋</a>
+										<div id="cart">
+											<div class="main">
+												<h3>最新加入的商品</h3>
+												<ul class="goods"></ul>
+												<div class="total">
+													<em class="total_number">0</em>件商品,共
+													<em class="total_price">￥0</em>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="search">
+							<input id="search" type="text" placeholder="搜索" />
+							<a id="submit" href="#"></a>
+						</div>
+						<div class="banner">
+							<ul>
+								<li>
+									<a href="#">首页</a>
+								</li>
+								<li>
+									<a href="#">手表品牌</a>
+								</li>
+								<li>
+									<a href="#">手表大全</a>
+								</li>
+								<li>
+									<a href="#">品牌旗舰店</a>
+								</li>
+								<li>
+									<a href="#">名表资讯</a>
+								</li>
+								<li>
+									<a href="#">文化资讯</a>
+								</li>
+								<li>
+									<a href="#">名表特卖</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="lunbo_back">
+			<div class="container">
+				<ul class="lunbo_list">
+					<li class="lunbo-item active">
+						<a href="#">
+							<p><img src="images/lunbo01.jpg"></p>
+						</a>
+					</li>
+					<li class="lunbo-item">
+						<a href="#">
+							<p><img class="small_img" src="images/lunbo02_1.jpg" /></p>
+							<p><img class="small_img" src="images/lunbo02_2.jpg" /></p>
+							<p><img class="small_img" src="images/lunbo02_3.jpg" /></p>
+							<p><img class="small_img" src="images/lunbo02_4.jpg" /></p>
+						</a>
+					</li>
+					<li class="lunbo-item">
+						<a href="#">
+							<p><img class="small_img" src="images/lunbo03_1.jpg" /></p>
+							<p><img class="small_img" src="images/lunbo03_2.jpg" /></p>
+							<p><img class="small_img" src="images/lunbo03_3.jpg" /></p>
+							<p><img class="small_img" src="images/lunbo03_4.jpg" /></p>
+						</a>
+					</li>
+					<li class="lunbo-item">
+						<a href="#">
+							<p><img class="small_img" src="images/lunbo04_1.jpg" /></p>
+							<p><img class="small_img" src="images/lunbo04_2.jpg" /></p>
+							<p><img class="small_img" src="images/lunbo04_3.jpg" /></p>
+							<p><img class="small_img" src="images/lunbo04_4.jpg" /></p>
+						</a>
+					</li>
+				</ul>
+				<div class="contact">
+					<div class="num">
+						<ul class="num-list">
+							<li class="active"></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+					<div class="mack"></div>
+				</div>
+			</div>
+		</div>
+		<div id="homeTags_back">
+			<div class="container">
+				<ul>
+					<li class="bg_li">
+						<a href="#">正品保障</a>
+					</li>
+					<li>
+						<a href="#">线下自提</a>
+					</li>
+					<li>
+						<a href="#">天梭</a>
+					</li>
+					<li>
+						<a href="#">浪琴</a>
+					</li>
+					<li>
+						<a href="#">欧米茄</a>
+					</li>
+					<li>
+						<a href="#">机械表</a>
+					</li>
+					<li>
+						<a href="#">石英表</a>
+					</li>
+					<li>
+						<a href="#">男表</a>
+					</li>
+					<li>
+						<a href="#">女表</a>
+					</li>
+					<li>
+						<a href="#">德国手表</a>
+					</li>
+					<li>
+						<a href="#">手表配件</a>
+					</li>
+					<li>
+						<a href="#">时钟、台钟</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="homehot_back">
+			<div class="container">
+				<div class="homehot_head">
+					<span class="title">名表推荐</span>
+				</div>
+				<div class="homehot_body">
+				</div>
+			</div>
+		</div>
+		<div id="homebrand_back">
+			<div class="container">
+				<div class="box1200">
+					<div class="brand_left">
+						<div class="brandHotView">
+							<a href="#">
+								<p>
+									<img src="images/142742742398896.jpg" />
+								</p>
+							</a>
+							<div class="hottitle">
+								<p class="pinpai"><span>手表品牌</span>
+									<a id="shuaxin01" href="javascript:;">换一批</a>
+								</p>
+							</div>
+						</div>
+						<div class="brandList">
+							<ul class="brand_ul active">
+								<li>
+									<a title="天梭" href="#"><img src="images/1404180724-brand_logo_new.jpg" /></a>
+								</li>
+								<li>
+									<a title="坤格" href="#"><img src="images/1404180631-brand_logo_new.jpg" /></a>
+								</li>
+								<li>
+									<a title="浪琴" href="#"><img src="images/1404180644-brand_logo_new.jpg" /></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="brand_right">
+						<div class="brandHotView">
+							<a href="#">
+								<p>
+									<img src="images/144308236055094.jpg" />
+								</p>
+							</a>
+							<div class="hottitle">
+								<p class="pinpai"><span>其它品牌</span>
+									<a href="javascript:;" id="shuaxin02">换一批</a>
+								</p>
+							</div>
+						</div>
+						<div class="brandList">
+							<ul class="brand_ul active">
+								<li>
+									<a href="#"><img src="images/1442905797-brand_logo_new.jpg" /></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/1442904652-brand_logo_new.jpg" /></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/1442905654-brand_logo_new.jpg" /></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="brand_back">
+			<div class="container">
+				<div class="box1200">
+					<div class="top01 brand-top">
+						<div class="brand_nav">
+							<h1>顶级品牌</h1>
+							<p>Top Brands</p>
+							<ul>
+								<li>
+									<a class="active" href="javascript:;"><span><img src="images/1.png"/></span>百达翡丽</a>
+								</li>
+								<li>
+									<a href="javascript:;"><span><img src="images/2.png"/></span>江诗丹顿</a>
+								</li>
+								<li>
+									<a href="javascript:;"><span><img src="images/3.png"/></span>爱彼</a>
+								</li>
+								<li>
+									<a href="javascript:;"><span><img src="images/4.png"/></span>宝玑</a>
+								</li>
+								<li>
+									<a href="javascript:;"><span><img src="images/5.png"/></span>雅克德罗</a>
+								</li>
+							</ul>
+						</div>
+						<div class="nav-item active">
+							<div class="mainPlate">
+								<div class="leftPlate">
+									<dl>
+										<dt><a href="#"><img src="images/1443082246-tehui_img.jpg"/></a></dt>
+										<dd>
+											<div class="brandIMG">
+												<a href="javascript:;"><img src="images/1404178922-brand_logo_new.jpg" /></a>
+											</div>
+											<div class="brandDESC">
+												<p>特惠价:</p>
+												<span>￥296310</span><s class="after_price">￥348600</s>
+											</div>
+										</dd>
+									</dl>
+								</div>
+								<div class="rightPlate">
+									<div class="topgoods">
+										<dl>
+											<dt>
+												<a href="javascript:;"><img src="images/1404392587732123884.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="#">
+													<p>百达翡丽复杂功能计时系列5131J-001男士自动机械表</p>
+													<p>优惠价:￥1045500</p>
+												</a>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="javascript:;"><img src="images/14043925761078615250.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="#">
+													<p>百达翡丽复杂功能计时系列5131J-001男士自动机械表</p>
+													<p>优惠价:￥1045500</p>
+												</a>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="javascript:;"><img src="images/1404392563346593101.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="#">
+													<p>百达翡丽复杂功能计时系列5131J-001男士自动机械表</p>
+													<p>优惠价:￥1045500</p>
+												</a>
+											</dd>
+										</dl>
+									</div>
+									<div class="brand-bottom">
+										<div class="prev">
+											<span>&lt;</span>
+										</div>
+										<div class="brandBody">
+										</div>
+										<div class="next">
+											<span>&gt;</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="nav-item">
+							<div class="mainPlate">
+								<div class="leftPlate">
+									<dl>
+										<dt><a href="#"><img src="images/1443082217-tehui_img.jpg"/></a></dt>
+										<dd>
+											<div class="brandIMG">
+												<a href="javascript:;"><img src="images/1404178922-brand_logo_new.jpg" /></a>
+											</div>
+											<div class="brandDESC">
+												<p>特惠价:</p>
+												<span>￥296310</span><s class="after_price">￥348600</s>
+											</div>
+										</dd>
+									</dl>
+								</div>
+								<div class="rightPlate">
+									<div class="topgoods">
+										<dl>
+											<dt>
+												<a href="javascript:;"><img src="images/1404392587732123884.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="#">
+													<p>百达翡丽复杂功能计时系列5131J-001男士自动机械表</p>
+													<p>优惠价:￥1045500</p>
+												</a>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="javascript:;"><img src="images/14043925761078615250.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="#">
+													<p>百达翡丽复杂功能计时系列5131J-001男士自动机械表</p>
+													<p>优惠价:￥1045500</p>
+												</a>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="javascript:;"><img src="images/1404392563346593101.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="#">
+													<p>百达翡丽复杂功能计时系列5131J-001男士自动机械表</p>
+													<p>优惠价:￥1045500</p>
+												</a>
+											</dd>
+										</dl>
+									</div>
+									<div class="brand-bottom">
+										<div class="prev">
+											<span>&lt;</span>
+										</div>
+										<div class="brandBody">
+										</div>
+										<div class="next">
+											<span>&gt;</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="nav-item">
+							<div class="mainPlate">
+								<div class="leftPlate">
+									<dl>
+										<dt><a href="#"><img src="images/1443082195-tehui_img.jpg"/></a></dt>
+										<dd>
+											<div class="brandIMG">
+												<a href="javascript:;"><img src="images/1404178922-brand_logo_new.jpg" /></a>
+											</div>
+											<div class="brandDESC">
+												<p>特惠价:</p>
+												<span>￥296310</span><s class="after_price">￥348600</s>
+											</div>
+										</dd>
+									</dl>
+								</div>
+								<div class="rightPlate">
+									<div class="topgoods">
+										<dl>
+											<dt>
+												<a href="javascript:;"><img src="images/1404392587732123884.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="#">
+													<p>百达翡丽复杂功能计时系列5131J-001男士自动机械表</p>
+													<p>优惠价:￥1045500</p>
+												</a>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="javascript:;"><img src="images/14043925761078615250.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="#">
+													<p>百达翡丽复杂功能计时系列5131J-001男士自动机械表</p>
+													<p>优惠价:￥1045500</p>
+												</a>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="javascript:;"><img src="images/1404392563346593101.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="#">
+													<p>百达翡丽复杂功能计时系列5131J-001男士自动机械表</p>
+													<p>优惠价:￥1045500</p>
+												</a>
+											</dd>
+										</dl>
+									</div>
+									<div class="brand-bottom">
+										<div class="prev">
+											<span>&lt;</span>
+										</div>
+										<div class="brandBody">
+										</div>
+										<div class="next">
+											<span>&gt;</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="nav-item">
+							<div class="mainPlate">
+								<div class="leftPlate">
+									<dl>
+										<dt><a href="#"><img src="images/1443082167-tehui_img.jpg"/></a></dt>
+										<dd>
+											<div class="brandIMG">
+												<a href="javascript:;"><img src="images/1404178922-brand_logo_new.jpg" /></a>
+											</div>
+											<div class="brandDESC">
+												<p>特惠价:</p>
+												<span>￥296310</span><s class="after_price">￥348600</s>
+											</div>
+										</dd>
+									</dl>
+								</div>
+								<div class="rightPlate">
+									<div class="topgoods">
+										<dl>
+											<dt>
+												<a href="javascript:;"><img src="images/1404392587732123884.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="#">
+													<p>百达翡丽复杂功能计时系列5131J-001男士自动机械表</p>
+													<p>优惠价:￥1045500</p>
+												</a>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="javascript:;"><img src="images/14043925761078615250.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="#">
+													<p>百达翡丽复杂功能计时系列5131J-001男士自动机械表</p>
+													<p>优惠价:￥1045500</p>
+												</a>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="javascript:;"><img src="images/1404392563346593101.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="#">
+													<p>百达翡丽复杂功能计时系列5131J-001男士自动机械表</p>
+													<p>优惠价:￥1045500</p>
+												</a>
+											</dd>
+										</dl>
+									</div>
+									<div class="brand-bottom">
+										<div class="prev">
+											<span>&lt;</span>
+										</div>
+										<div class="brandBody">
+										</div>
+										<div class="next">
+											<span>&gt;</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="nav-item">
+							<div class="mainPlate">
+								<div class="leftPlate">
+									<dl>
+										<dt><a href="#"><img src="images/1443082139-tehui_img.jpg"/></a></dt>
+										<dd>
+											<div class="brandIMG">
+												<a href="javascript:;"><img src="images/1404178922-brand_logo_new.jpg" /></a>
+											</div>
+											<div class="brandDESC">
+												<p>特惠价:</p>
+												<span>￥296310</span><s class="after_price">￥348600</s>
+											</div>
+										</dd>
+									</dl>
+								</div>
+								<div class="rightPlate">
+									<div class="topgoods">
+										<dl>
+											<dt>
+												<a href="javascript:;"><img src="images/1404392587732123884.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="#">
+													<p>百达翡丽复杂功能计时系列5131J-001男士自动机械表</p>
+													<p>优惠价:￥1045500</p>
+												</a>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="javascript:;"><img src="images/14043925761078615250.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="#">
+													<p>百达翡丽复杂功能计时系列5131J-001男士自动机械表</p>
+													<p>优惠价:￥1045500</p>
+												</a>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="javascript:;"><img src="images/1404392563346593101.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="#">
+													<p>百达翡丽复杂功能计时系列5131J-001男士自动机械表</p>
+													<p>优惠价:￥1045500</p>
+												</a>
+											</dd>
+										</dl>
+									</div>
+									<div class="brand-bottom">
+										<div class="prev">
+											<span>&lt;</span>
+										</div>
+										<div class="brandBody">
+										</div>
+										<div class="next">
+											<span>&gt;</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="top02 brand-top">
+						<div class="brand_nav">
+							<h1 class="two">专业品牌</h1>
+							<p>Professional Brands</p>
+							<ul>
+								<li>
+									<a class="active_two" href="javascript:;"><span><img src="images/6.png"/></span>劳力士</a>
+								</li>
+								<li>
+									<a href="javascript:;"><span><img src="images/7.png"/></span>欧米茄</a>
+								</li>
+								<li>
+									<a href="javascript:;"><span><img src="images/8.png"/></span>卡地亚</a>
+								</li>
+								<li>
+									<a href="javascript:;"><span><img src="images/9.png"/></span>万国</a>
+								</li>
+								<li>
+									<a href="javascript:;"><span><img src="images/10.png"/></span>百年灵</a>
+								</li>
+							</ul>
+						</div>
+						<div class="nav-item active">
+							<div class="mainPlate">
+								<div class="leftPlate">
+									<dl>
+										<dt><a href="#"><img src="images/1443082073-tehui_img.jpg"/></a></dt>
+										<dd>
+											<div class="brandIMG">
+												<a href="javascript:;"><img src="images/1404180585-brand_logo_new.jpg" /></a>
+											</div>
+											<div class="brandDESC">
+												<p>特惠价:</p>
+												<span>￥296310</span><s class="after_price">￥348600</s>
+											</div>
+										</dd>
+									</dl>
+								</div>
+								<div class="rightPlate">
+									<div class="topgoods">
+										<dl>
+											<dt>
+												<a href="javascript:;"><img src="images/14043928111068747539.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="#">
+													<p>百达翡丽复杂功能计时系列5131J-001男士自动机械表</p>
+													<p>优惠价:￥1045500</p>
+												</a>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="javascript:;"><img src="images/1404392811963057158.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="#">
+													<p>百达翡丽复杂功能计时系列5131J-001男士自动机械表</p>
+													<p>优惠价:￥1045500</p>
+												</a>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="javascript:;"><img src="images/14046997216.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="#">
+													<p>百达翡丽复杂功能计时系列5131J-001男士自动机械表</p>
+													<p>优惠价:￥1045500</p>
+												</a>
+											</dd>
+										</dl>
+									</div>
+									<div class="brand-bottom">
+										<div id="prev" class="prev">
+											<span>&lt;</span>
+										</div>
+										<div class="brandBody">
+											
+										</div>
+										<div id="next" class="next">
+											<span>&gt;</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="nav-item">
+							<div class="mainPlate">
+								<div class="leftPlate">
+									<dl>
+										<dt><a href="#"><img src="images/1443082098-tehui_img.jpg"/></a></dt>
+										<dd>
+											<div class="brandIMG">
+												<a href="javascript:;"><img src="images/1404178922-brand_logo_new.jpg" /></a>
+											</div>
+											<div class="brandDESC">
+												<p>特惠价:</p>
+												<span>￥296310</span><s class="after_price">￥348600</s>
+											</div>
+										</dd>
+									</dl>
+								</div>
+								<div class="rightPlate">
+									<div class="topgoods">
+										<dl>
+											<dt>
+												<a href="javascript:;"><img src="images/1404392587732123884.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="#">
+													<p>百达翡丽复杂功能计时系列5131J-001男士自动机械表</p>
+													<p>优惠价:￥1045500</p>
+												</a>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="javascript:;"><img src="images/14043925761078615250.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="#">
+													<p>百达翡丽复杂功能计时系列5131J-001男士自动机械表</p>
+													<p>优惠价:￥1045500</p>
+												</a>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="javascript:;"><img src="images/1404392563346593101.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="#">
+													<p>百达翡丽复杂功能计时系列5131J-001男士自动机械表</p>
+													<p>优惠价:￥1045500</p>
+												</a>
+											</dd>
+										</dl>
+									</div>
+									<div class="brand-bottom">
+										<div class="prev">
+											<span>&lt;</span>
+										</div>
+										<div class="brandBody">
+											
+										</div>
+										<div class="next">
+											<span>&gt;</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="nav-item">
+							<div class="mainPlate">
+								<div class="leftPlate">
+									<dl>
+										<dt><a href="#"><img src="images/1443082029-tehui_img.jpg"/></a></dt>
+										<dd>
+											<div class="brandIMG">
+												<a href="javascript:;"><img src="images/1404178922-brand_logo_new.jpg" /></a>
+											</div>
+											<div class="brandDESC">
+												<p>特惠价:</p>
+												<span>￥296310</span><s class="after_price">￥348600</s>
+											</div>
+										</dd>
+									</dl>
+								</div>
+								<div class="rightPlate">
+									<div class="topgoods">
+										<dl>
+											<dt>
+												<a href="javascript:;"><img src="images/1404392587732123884.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="#">
+													<p>百达翡丽复杂功能计时系列5131J-001男士自动机械表</p>
+													<p>优惠价:￥1045500</p>
+												</a>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="javascript:;"><img src="images/14043925761078615250.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="#">
+													<p>百达翡丽复杂功能计时系列5131J-001男士自动机械表</p>
+													<p>优惠价:￥1045500</p>
+												</a>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="javascript:;"><img src="images/1404392563346593101.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="#">
+													<p>百达翡丽复杂功能计时系列5131J-001男士自动机械表</p>
+													<p>优惠价:￥1045500</p>
+												</a>
+											</dd>
+										</dl>
+									</div>
+									<div class="brand-bottom">
+										<div class="prev">
+											<span>&lt;</span>
+										</div>
+										<div class="brandBody">
+											
+										</div>
+										<div class="next">
+											<span>&gt;</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="nav-item">
+							<div class="mainPlate">
+								<div class="leftPlate">
+									<dl>
+										<dt><a href="#"><img src="images/1443081952-tehui_img.jpg"/></a></dt>
+										<dd>
+											<div class="brandIMG">
+												<a href="javascript:;"><img src="images/1404178922-brand_logo_new.jpg" /></a>
+											</div>
+											<div class="brandDESC">
+												<p>特惠价:</p>
+												<span>￥296310</span><s class="after_price">￥348600</s>
+											</div>
+										</dd>
+									</dl>
+								</div>
+								<div class="rightPlate">
+									<div class="topgoods">
+										<dl>
+											<dt>
+												<a href="javascript:;"><img src="images/1404392587732123884.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="#">
+													<p>百达翡丽复杂功能计时系列5131J-001男士自动机械表</p>
+													<p>优惠价:￥1045500</p>
+												</a>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="javascript:;"><img src="images/14043925761078615250.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="#">
+													<p>百达翡丽复杂功能计时系列5131J-001男士自动机械表</p>
+													<p>优惠价:￥1045500</p>
+												</a>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="javascript:;"><img src="images/1404392563346593101.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="#">
+													<p>百达翡丽复杂功能计时系列5131J-001男士自动机械表</p>
+													<p>优惠价:￥1045500</p>
+												</a>
+											</dd>
+										</dl>
+									</div>
+									<div class="brand-bottom">
+										<div class="prev">
+											<span>&lt;</span>
+										</div>
+										<div class="brandBody">
+											
+										</div>
+										<div class="next">
+											<span>&gt;</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="nav-item">
+							<div class="mainPlate">
+								<div class="leftPlate">
+									<dl>
+										<dt><a href="#"><img src="images/1443081911-tehui_img.jpg"/></a></dt>
+										<dd>
+											<div class="brandIMG">
+												<a href="javascript:;"><img src="images/1404178922-brand_logo_new.jpg" /></a>
+											</div>
+											<div class="brandDESC">
+												<p>特惠价:</p>
+												<span>￥296310</span><s class="after_price">￥348600</s>
+											</div>
+										</dd>
+									</dl>
+								</div>
+								<div class="rightPlate">
+									<div class="topgoods">
+										<dl>
+											<dt>
+												<a href="javascript:;"><img src="images/1404392587732123884.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="#">
+													<p>百达翡丽复杂功能计时系列5131J-001男士自动机械表</p>
+													<p>优惠价:￥1045500</p>
+												</a>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="javascript:;"><img src="images/14043925761078615250.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="#">
+													<p>百达翡丽复杂功能计时系列5131J-001男士自动机械表</p>
+													<p>优惠价:￥1045500</p>
+												</a>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="javascript:;"><img src="images/1404392563346593101.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="#">
+													<p>百达翡丽复杂功能计时系列5131J-001男士自动机械表</p>
+													<p>优惠价:￥1045500</p>
+												</a>
+											</dd>
+										</dl>
+									</div>
+									<div class="brand-bottom">
+										<div class="prev">
+											<span>&lt;</span>
+										</div>
+										<div class="brandBody">
+											
+										</div>
+										<div class="next">
+											<span>&gt;</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="message_back">
+			<div class="container">
+				<div class="box1200">
+					<div class="title">
+						<span class="title">名表资讯</span>
+					</div>
+					<div class="message">
+						<div class="message_left">
+							<div class="lunbo">
+								<div class="lunbo-item active">
+									<a href="javascript:;"><img src="images/20160322164405-file.jpg" /></a>
+								</div>
+								<div class="lunbo-item">
+									<a href="javascript:;"><img src="images/20160215172444-file.jpg" /></a>
+								</div>
+								<div class="lunbo-item">
+									<a href="javascript:;"><img src="images/20150910152747-file.jpg" /></a>
+								</div>
+								<ul class="lunbo_list">
+									<li>
+										<a class="active" href="javascript:;"></a>
+									</li>
+									<li>
+										<a href="javascript:;"></a>
+									</li>
+									<li>
+										<a style="border:none;" href="javascript:;"></a>
+									</li>
+								</ul>
+							</div>
+							<div class="news">
+								<div class="news-item active">
+									<p class="title"><span class="jt01"></span>
+										<a href="#">2016 Basel：劳力士多款新品预览</a>
+									</p>
+									<p class="desc">2016年第44届巴塞尔钟表展于今天正式拉开帷幕，作为巴展上首屈一指的明星品牌，劳力士每年的新品都广受关注。今年包括宇宙计型迪通拿、空霸（Air-King）、游艇名仕型40、探险家型等系列都推出了新品，下面来看一下部分款式。</p>
+								</div>
+								<div class="news-item">
+									<p class="title"><span class="jt01"></span>
+										<a href="#">2016 Basel： 欧米茄超霸系列月相计时天文台腕表</a>
+									</p>
+									<p class="desc">第44届巴塞尔国际钟表珠宝展（Baselworld 2016）将于3月17日至24日隆重举行。瑞士著名制表品牌欧米茄（Omega）推出超霸系列月相计时天文台腕表，</p>
+								</div>
+								<div class="news-item">
+									<p class="title"><span class="jt01"></span>
+										<a href="#">钟表与奇迹：朗格1815 Chronograph白金腕表</a>
+									</p>
+									<p class="desc">2015年香港“钟表与奇迹”亚洲高级钟表展即将开幕，朗格（A.Lange&Söhne）为此特别推出全新1815 Chronograph腕表。这款独特的</p>
+								</div>
+							</div>
+						</div>
+						<div class="message_center">
+							<dl>
+								<dt>
+									<a href="#"><img src="images/20160517142518-file.jpg"/></a>
+								</dt>
+								<dd>
+									<a href="#">福布斯2016年度全球最具价值品牌排行榜 卡地亚劳力士上榜</a>
+								</dd>
+							</dl>
+							<dl class="right">
+								<dt>
+									<a href="#"><img src="images/20160513172255-file.jpg"/></a>
+								</dt>
+								<dd>
+									<a href="#">福布斯2016年度全球最具价值品牌排行榜 卡地亚劳力士上榜</a>
+								</dd>
+							</dl>
+							<dl class="bottom">
+								<dt>
+									<a href="#"><img src="images/20160513171643-file.jpg"/></a>
+								</dt>
+								<dd>
+									<a href="#">福布斯2016年度全球最具价值品牌排行榜 卡地亚劳力士上榜</a>
+								</dd>
+							</dl>
+							<dl class="last-bottom">
+								<dt>
+									<a href="#"><img src="images/20160513171124-file.jpg"/></a>
+								</dt>
+								<dd>
+									<a href="#">福布斯2016年度全球最具价值品牌排行榜 卡地亚劳力士上榜</a>
+								</dd>
+							</dl>
+						</div>
+						<div class="message_right">
+							<a href="javascript:;">
+								<img src="images/20160322165251-file.jpg" />
+								<div class="title">2016 Basel：宝格丽LVCEA系列缤纷绽放</div>
+								<div class="mask"></div>
+							</a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<section class="box1200 help">
+				<div class="leftApplication">
+					<div class="chapterTitle">电话应用中心</div>
+					<div class="chapterBody">
+						<dl class="telephone">
+							<dt>电话订购</dt>
+							<dd style="position:relative;">
+								<p><span class="tel"></span>4000508013</p>
+								<p>售后服务</p>
+								<p><span class="tel"></span>4000508013</p>
+								<p class="attention">
+									关注我们
+									<a id="weixin" href="#"><span class="weixin"><img src="images/weixin_logo.png"</span></a>
+									<a target="_blank" rel="nofollow" href="http://weibo.com/1824123263/profile?topnav=1&amp;wvr=6"><span class="sina"><img src="images/sina_logo.png"</span></a>
+								</p>
+								<div class="footer_weixin_hidden" style="display: none;position: absolute;top:-204px; left:-46px;"><img src="images/weixin_bottom.png"></div>
+							</dd>
+						</dl>
+						<dl class="iphone">
+							<dt>聚风尚名表鉴赏手机APP</dt>
+							<dd style="position:relative;z-index:99;">
+								<a href="https://itunes.apple.com/cn/app/ju-feng-shang-ming-biao-tu-jian/id723491078?ls=1%EF%BC%86mt=8">
+									<span class="ios"><img src="images/iphone_logo.png"/></span>
+									<p>IOS</p>
+								</a>
+								<a href="http://app.jufengshang.com/jfswatch_v1.0.apk">
+									<span class="android"><img src="images/anzhuo_logo.png"/></span>
+									<p>安卓</p>
+								</a>
+								<a id="saoma" href="javascript:;">
+									<span class="code"><img src="images/erweima_logo.png"/></span>
+									<p>扫码</p>
+								</a>
+								<div class="footer_apperweima_hidden" style="display: none; position: absolute;top:-273px; left:23px;"><img src="images/apperweima.png"></div>
+							</dd>
+						</dl>
+					</div>
+
+				</div>
+				<div class="rightService">
+					<div class="chapterTitle">服务帮助中心</div>
+					<div class="chapterBody">
+						<dl class="fore1">
+							<dt>购物指南</dt>
+							<dd>
+								<a href="/shopping.html" rel="nofollow">购物流程</a>
+							</dd>
+							<dd>
+								<a href="/beginners.html" rel="nofollow">新手入门</a>
+							</dd>
+							<dd>
+								<a href="/invoice.html" rel="nofollow">发票制度</a>
+							</dd>
+							<dd>
+								<a href="/clause.html" rel="nofollow">交易条款</a>
+							</dd>
+						</dl>
+
+						<dl class="fore2">
+							<dt>如何支付</dt>
+							<dd>
+								<a href="/payment.html" rel="nofollow">支付方式</a>
+							</dd>
+							<dd>
+								<a href="/payonline.html" rel="nofollow">在线支付</a>
+							</dd>
+							<dd>
+								<a href="/staging.html" rel="nofollow">分期付款</a>
+							</dd>
+							<dd>
+								<a href="/questions.html" rel="nofollow">常见问题</a>
+							</dd>
+						</dl>
+
+						<dl class="fore3">
+							<dt>配送方式</dt>
+							<dd>
+								<a href="/delivery.html" rel="nofollow">配送时间及运费</a>
+							</dd>
+							<dd>
+								<a href="/zt/haidian/" rel="nofollow">上门自提</a>
+							</dd>
+							<dd>
+								<a href="/receive.html" rel="nofollow">验货与签收</a>
+							</dd>
+							<dd>
+								<a href="/order.html" rel="nofollow">订单查询</a>
+							</dd>
+						</dl>
+
+						<dl class="fore4">
+							<dt>会员制度</dt>
+							<dd>
+								<a href="/logins/index" rel="nofollow">会员注册</a>
+							</dd>
+							<dd>
+								<a href="/user/vipdetail">会员等级</a>
+							</dd>
+							<dd>
+								<a href="/user/integral">积分制度</a>
+							</dd>
+							<dd>
+								<a href="javascript:;">优惠信息</a>
+							</dd>
+						</dl>
+
+						<dl class="fore5">
+							<dt>服务保障</dt>
+							<dd>
+								<a href="/privacy.html" rel="nofollow">隐私保护政策</a>
+							</dd>
+							<dd>
+								<a href="/service.html" rel="nofollow">服务承诺</a>
+							</dd>
+							<dd>
+								<a href="/tuihuo.html" rel="nofollow">退换货流程</a>
+							</dd>
+
+						</dl>
+
+						<dl class="fore6">
+							<dt>帮助中心</dt>
+							<dd>
+								<a href="/cooperation.html" rel="nofollow">推广合作</a>
+							</dd>
+							<dd>
+								<a href="/logins/retrievepassword" rel="nofollow">忘记密码</a>
+							</dd>
+							<dd>
+								<a href="/contactus.html" rel="nofollow">联系我们</a>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</section>
+			<section class="footerInfo">
+				<div class="box1200 footerInfoPosition">
+					<div class="trust" style="overflow: hidden; width: 108px;">
+						<ul>
+							<li>
+								<a target="_blank" href="https://search.szfw.org/cert/l/CX20130319002313002371" id="___szfw_logo___" rel="nofollow"><img src="images/bottom_logo_3.jpg"></a>
+							</li>
+							<li>
+								<a href="http://buy.etao.com/search.htm?id=732310327&amp;partner=41" target="_blank" rel="nofollow"><img width="108" height="35" src="images/bottom_logo_etao.jpg"></a>
+							</li>
+							<li style="display:inline-block;position:relative;width:auto;">
+								<a rel="nofollow" style="display:inline-block;" target="_blank" tabindex="-1" id="kx_verify" href="https://ss.knet.cn/verifyseal.dll?sn=e12092744010036105000000&amp;ct=df&amp;a=1&amp;pa=410737"> <img width="108" height="35" alt="可信网站" oncontextmenu="return false;" style="border:none;" src="http://rr.knet.cn/static/images/logo/cnnic.png"> </a>
+							</li>
+							<li><img width="108" height="35" src="images/bottom_logo_cft.jpg"></li>
+							<li>
+								<a href="http://huodong.ebrun.com/2011b2c/new/bdlist" target="_blank" rel="nofollow"><img width="108" height="35" src="images/bottom_logo_top100.jpg"></a>
+							</li>
+						</ul>
+					</div>
+					<ul class="other">
+						<li class="story">
+							<a target="_blank" href="http://www.jufengshang.com/zhounianqing-history/">聚风尚大事记</a>
+						</li>
+						<li class="link">
+							<a target="_blank" href="http://www.jufengshang.com/friendly_link.html">友情链接</a>
+							<span id="linkMore">更多&gt;</span>
+						</li>
+						<li class="copyright">聚风尚名表商城 粤ICP备10030670号 版权所有 Copyright 2010-2014 jufengshang.com</li>
+					</ul>
+				</div>
+				<div id="linkBody">
+					<a href="http://www.ebrun.com/" target="_blank">亿邦</a>
+					<a href="http://www.wine9.com" target="_blank">进口红酒</a>
+					<a href="http://www.pinpinwang.com" target="_blank">拼拼网</a>
+					<a href="http://photo.bitauto.com/" target="_blank">汽车图片</a>
+					<a href="http://watch.pclady.com.cn/" target="_blank">PClady手表</a>
+					<a href="http://www.zbird.com/" target="_blank">戒指</a>
+					<a href="http://www.tripc.net" target="_blank">旅行社网店</a>
+					<a href="http://nanning.baixing.com/" target="_blank">南宁百姓网</a>
+					<a href="http://www.wto168.net/" target="_blank">珠宝</a>
+					<a href="http://www.jufengshang.com/xinnian" target="_blank">新年祝福语</a>
+					<a href="http://www.800pharm.com" target="_blank">网上药店</a>
+					<a href="http://www.paixie.net/" target="_blank">拍鞋网</a>
+					<a href="http://www.17ugo.com" target="_blank">电视购物</a>
+					<a href="http://www.zhulong.com" target="_blank">筑龙网</a>
+					<a href="http://www.yacol.com" target="_blank">雅酷卡</a>
+					<a href="http://www.hers.com.cn/" target="_blank">爱物网</a>
+					<a href="http://dalian.anjuke.com/" target="_blank">大连房产网</a>
+					<a href="http://lux.cngold.org/" target="_blank">金投奢侈品</a>
+					<a href="http://www.giabbs.com" target="_blank">珠宝大家坛</a>
+					<a href="http://dealer.webcars.com.cn/" target="_blank">4s店</a>
+					<a href="http://www.taoxie.com/" target="_blank">淘鞋网</a>
+					<a href="http://www.inshion.com/" target="_blank">型尚网</a>
+					<a href="http://www.outlets365.com" target="_blank">奥特莱斯商城</a>
+					<a href="http://www.xbiao.com/" target="_blank">手表</a>
+					<a href="http://www.xtep.com.cn/" target="_blank">特步官方旗舰店</a>
+					<a href="http://gz.fang.com/" target="_blank">广州房产网</a>
+					<a href="http://www.winshang.com/" target="_blank">赢商网</a>
+					<a href="http://www.1000tuan.com" target="_blank">千团网</a>
+					<a href="http://www.jxw.com" target="_blank">机械网</a>
+					<a href="http://www.zhe800.com/" target="_blank">折800</a>
+					<a href="http://used.xcar.com.cn/ " target="_blank">二手车</a>
+					<a href="http://www.53shop.com/" target="_blank">53货源网</a>
+					<a href="http://www.chinawatchnet.com" target="_blank">中国钟表网</a>
+					<a href="http://auto.chexun.com" target="_blank">汽车大全</a>
+				</div>
+			</section>
+		</footer>
+		<div id="simple">
+			<div class="floatbar">
+				<div class="erweima_right"><img src="images/kf_weixin.png"/></div>
+				<a href="javascript:;"><img src="images/float_pic01.png"/></a>
+				<a id="weixin_right" href="javascript:;"><img src="images/float_pic02.png"/></a>
+				<a href="#"><img src="images/float_pic03.png"/></a>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/index.js" ></script>
+	</body>
+</html>

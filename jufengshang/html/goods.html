@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情页</title>
+		<link rel="stylesheet" href="../css/goods.css" />
+		<script type="text/javascript" src="../js/jquery-1.12.4.js"></script>
+		<script type="text/javascript" src="../js/jquery.cookie.js" ></script>
+	</head>
+
+	<body>
+		<div id="head_back">
+			<div class="container">
+				<div class="box1200">
+					<div id="logo">
+						<a href="../index.html"><img src="../images/logo.gif" /></a>
+					</div>
+					<div id="heading">
+						<div class="top-nav">
+							<ul>
+								<li class="ewm_li">
+									<a href="javascript:;"><span class="coll"></span></a>
+									<a href="javascript:;"><span class="code"></span></a>
+									<div class="weixin_hide">
+										<img class="hide_img" src="../images/weixin2.png" />
+									</div>
+									<script>
+										$("#head_back .code").mouseover(function() {
+											$("#head_back .weixin_hide").show();
+										}).mouseleave(function() {
+											$("#head_back .weixin_hide").hide();
+										});
+									</script>
+								</li>
+								<li class="toplogin">
+									<p>您好!请 [
+										<a href="#">登录</a>|
+										<a href="http://127.0.0.1:8020/jufengshang/html/zhuce.html?">注册</a>] (赠送68元)
+										<a href="#">我的订单</a>
+									</p>
+								</li>
+								<li>
+									<p class="telphone">4000508013</p>
+								</li>
+								<li class="end">
+									<div class="top-cart">
+										<a class="shopbag" href="#">购物袋</a>
+										<div id="cart">
+											<div class="main">
+												<h3>最新加入的商品</h3>
+												<ul class="goods"></ul>
+												<div class="total">
+													<em class="total_number">0</em>件商品,共
+													<em class="total_price">￥0</em>
+												</div>
+											</div>
+										</div>
+									</div>
+									<script>
+										$("#head_back .top-cart").mouseover(function() {
+											$("#head_back #cart").show();
+										});
+										$("#head_back #cart").mouseleave(function() {
+											$("#head_back #cart").hide();
+										});
+									</script>
+								</li>
+							</ul>
+						</div>
+						<div class="search">
+							<input id="search" type="text" placeholder="搜索" />
+							<a id="submit" href="#"></a>
+						</div>
+						<div class="banner">
+							<ul>
+								<li>
+									<a href="#">首页</a>
+								</li>
+								<li>
+									<a href="#">手表品牌</a>
+								</li>
+								<li>
+									<a href="#">手表大全</a>
+								</li>
+								<li>
+									<a href="#">品牌旗舰店</a>
+								</li>
+								<li>
+									<a href="#">名表资讯</a>
+								</li>
+								<li>
+									<a href="#">文化资讯</a>
+								</li>
+								<li>
+									<a href="#">名表特卖</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="location_back">
+			<div class="container">
+				<p>当前位置：
+					<a href="../index.html">聚风尚首页</a> > 钟表 >
+					<a href="#">手表</a> >
+					<a href="#">爱彼</a> > 爱彼皇家橡树离岸型系列15707CE.OO.A002CA.01男士自动机械表（Audemars Piguet)</p>
+			</div>
+		</div>
+		<div id="goodsinfo_back">
+			<div class="container">
+				<div class="pic">
+					<div class="g_images">
+						<a href="javascript:;">
+							<div class="zoompad">
+								<img class="pic" src="../images/fd_pic.jpg" />
+								<div class="zoompup"></div>
+								<div class="zoomwindow">
+									<div class="zoomrap">
+										<div class="title">爱彼皇家橡树离岸型系列15707CE.OO.A002CA.01男士自动机械表（Audemars Piguet)</div>
+										<div id="Img"><img id="img" src="../images/fd_big.jpg" /></div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="gallery">
+						<span class="pre">&lt;</span>
+						<div class="tab_pic">
+							<ul>
+								<li>
+									<a href="javascript:;">
+										<img src="../images/fd_small.jpg" />
+									</a>
+								</li>
+							</ul>
+						</div>
+						<span class="next">&gt;</span>
+					</div>
+				</div>
+				<div class="information">
+					<div class="title">
+						<h1>爱彼皇家橡树离岸型系列15707CE.OO.A002CA.01男士自动机械表（Audemars Piguet)</h1>
+						<p class="desc">百年精湛工艺，优雅外观设计，世界著名三大制表品牌之一</p>
+					</div>
+					<ul class="goinfo">
+						<li class="price">风尚价
+							<span class="here_price">￥152150</span>
+							<span class="m_price">市场价<s>￥179000</s></span>
+						</li>
+						<li class="fenqi">分期
+							<span class="staging">￥6340×24</span>
+							<a href="#">如何分期</a>
+						</li>
+						<li class="service"><i>服务</i>
+							<span class="ser1"><a href="#">正品保证</a></span>
+							<span class="ser2"><a href="#">全球联保</a></span>
+							<span class="ser3"><a href="#">免运费</a></span>
+							<span class="ser4"><a href="#">分期付款</a></span>
+						</li>
+					</ul>
+					<p class="color">颜色
+						<a href="#"><img src="../images/1440128008-goods_img0.jpg" /> </a></p>
+					<p class="number">
+						<b class="text">购买数量</b>
+						<span id="down" class="down">-</span>
+						<span class="input">1</span>
+						<span id="up" class="up">+</span>
+					</p>
+					<div class="gbutton">
+						<a class="go_buy" href="shopcart.html">立即购买</a>
+						<a id="addbag" class="addbag" href="javascript:;">加入购物袋</a>
+					</div>
+					<div class="coll">
+						<a class="favorite" href="javascript:;"><i></i>收藏商品</a>
+						<a class="share" href="javascript:;"><i></i>分享商品</a>
+					</div>
+					<div class="kefu">
+						<div class="title">咨询客服</div>
+						<p>商品支持正、保、免、</p>
+						<p>分等服务，请放心购买。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="recommend_back">
+			<div class="container">
+				<div class="recom_top">
+					<span kind="hot" class="hot active">热销推荐</span>
+					<span kind="like" class="live">猜你喜欢</span>
+				</div>
+				<div class="recom_bottom">
+				</div>
+			</div>
+		</div>
+		<p class="clearH25"></p>
+		<section class="box1200 goodsDesc">
+			<div class="sectionTitle-box">
+				<div class="sectionTitle">
+					<ul>
+						<li class="cur">商品详情</li>
+						<li class="">正品保证</li>
+						<li class="">用户评价</li>
+						<li class="">问题咨询</li>
+						<li class="">售后服务</li>
+					</ul>
+					<a href="" class="buy"><i></i>立即购买</a>
+				</div>
+			</div>
+			<div class="sectionBody" style="display: block;">
+				<div class="attributeList">
+					<div class="title">产品参数：</div>
+					<ul>
+						<li><span>性别</span>
+							<a href="/audemarspiguet-1.html" target="_blank">男表</a>
+						</li>
+						<li><span>机芯</span>
+							<a href="/audemarspiguet-2687.html" target="_blank">自动机械表</a>
+						</li>
+						<li><span>表形</span>
+							<a href="/audemarspiguet-171.html" target="_blank">圆形</a>
+						</li>
+						<li class="end"><span>表带</span>
+							<a href="/audemarspiguet-647.html" target="_blank">橡胶</a>
+						</li>
+						<li><span>表盘</span>
+							<a href="/audemarspiguet-783.html" target="_blank">黑色</a>
+						</li>
+						<li><span>表壳</span>
+							<a href="/audemarspiguet-1497.html" target="_blank">陶瓷</a>
+						</li>
+						<li><span>系列</span>
+							<a href="/audemarspiguet-38829.html" target="_blank">皇家橡树离岸型系列</a>
+						</li>
+						<li class="end"><span>尺寸</span>
+							<a href="/audemarspiguet-1939.html" target="_blank">42mm</a>
+						</li>
+						<li><span>厚度</span>
+							<a href="/audemarspiguet-2109.html" target="_blank">13.9mm</a>
+						</li>
+						<li><span>防水</span>
+							<a href="/audemarspiguet-2279.html" target="_blank">300m</a>
+						</li>
+						<li><span>风格</span>
+							<a href="/audemarspiguet-7651.html" target="_blank">百搭</a>
+						</li>
+						<li class="end"><span>表底</span>
+							<a href="/audemarspiguet-2381.html" target="_blank">透明</a>
+						</li>
+						<li><span>表扣</span>
+							<a href="/audemarspiguet-2483.html" target="_blank">针扣</a>
+						</li>
+						<li><span>表镜</span>
+							<a href="/audemarspiguet-2551.html" target="_blank">蓝宝石水晶玻璃</a>
+						</li>
+						<li><span>刻度</span>
+							<a href="/audemarspiguet-3673.html" target="_blank">条形</a>
+						</li>
+						<li class="end"><span>表冠</span>
+							<a href="/audemarspiguet-3843.html" target="_blank">旋入式</a>
+						</li>
+						<li><span>表圈</span>
+							<a href="/audemarspiguet-9079.html" target="_blank">陶瓷</a>
+						</li>
+						<li><span>表针</span>
+							<a href="/audemarspiguet-3945.html" target="_blank">棒形</a>
+						</li>
+						<li><span>包装</span>
+							<a href="/audemarspiguet-7583.html" target="_blank">精美包装盒、保修卡、说明书</a>
+						</li>
+						<li class="end"><span>机芯型号</span>
+							<a href="/audemarspiguet-8093.html" target="_blank">爱彼3120</a>
+						</li>
+						<li><span>表带颜色</span>
+							<a href="/audemarspiguet-4149.html" target="_blank">黑色</a>
+						</li>
+						<li><span>功能</span>
+							<a href="/audemarspiguet-2823.html" target="_blank">日期显示</a>
+						</li>
+
+						<li><span></span></li>
+						<li class="end"><span></span></li>
+						<p class="clean"></p>
+					</ul>
+				</div>
+				<p class="cleanH25"></p>
+				<div class="introduction">
+					<ul>
+						<li class="video">
+							<embed src="http://player.youku.com/player.php/sid/XNTY3NjUxMTAw/v.swf" quality="high" width="400" height="250" align="middle" allowscriptaccess="always" allowfullscreen="true" mode="transparent" type="application/x-shockwave-flash" title="Adobe Flash Player">
+						</li>
+						<li class="info">
+							<div>
+								<p>【品牌简介】</p>
+								<div style="margin:0;padding:0;">
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 爱彼表在每一只表后刻上制造者的名字，以示负责保证。为维持瑞士作为钟表王国的美誉不坠，在瑞士设有钟表学校，以培养钟表界所需的钟表人才。一个学徒必须在钟表学校中先修完四年的课程，才能取得合格钟表匠的资格，不过若要成为一个爱彼表厂的师傅，则必须要再多花费两年时间，才有资格被派到超薄机械部门工作。爱彼表厂坚持以"老师傅的一双手"来打造手表的传统，百年如一日。爱彼的售后服务在世界各名牌表厂中是相当知名，即使是零件已经停产二十年，只要查询存有制造数据，爱彼表厂仍可以为客所修护，达到品质世代保证的目的。</p>
+								</div>
+							</div>
+						</li>
+						<li class="brandLogo">
+							<div class="logo">
+								<a href="/audemarspiguet/"><img src="" width="215"></a>
+							</div>
+							<p>爱彼（AudemarsPiguet）</p>
+						</li>
+					</ul>
+				</div>
+				<p class="cleanH25"></p>
+				<div class="goodsDescInfo">
+					<div class="title"></div>
+					<div class="body">
+						<div>
+							<p>【<strong>爱彼15707CE.OO.A002CA.01</strong><strong>简介</strong>】</p>
+
+							<p>&nbsp; &nbsp; &nbsp; 爱彼表在每一只表后刻上制造者的名字，以示负责保证。为维持瑞士作为钟表王国的美誉不坠，在瑞士设有钟表学校，以培养钟表界所需的钟表人才。一个学徒必须在钟表学校中先修完四年的课程，才能取得合格钟表匠的资格，不过若要成为一个爱彼表厂的师傅，则必须要再多花费两年时间，才有资格被派到超薄机械部门工作。爱彼表厂坚持以"老师傅的一双手"来打造手表的传统，百年如一日。爱彼的售后服务在世界各名牌表厂中是相当知名，即使是零件已经停产二十年，只要查询存有制造数据，爱彼表厂仍可以为客所修护，达到品质世代保证的目的。</p>
+						</div>
+						<p class="cleanH25"></p>
+						<div style="text-align:center;">
+							<p><img alt="" src="../images/fd_big.jpg" style="width: 600px; height: 600px;"></p>
+						</div>
+						<p class="cleanH25"></p>
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="sectionBody zpbzBody" style="display: none; padding: 0px;">
+				<div class="goodsAuthenticGuaranteed">
+					<ul class="tab">
+						<li class="o1 cur"></li>
+						<li class="o2" style="top: 0px;"></li>
+						<li class="o3" style="top: 0px;"></li>
+						<li class="o4"></li>
+						<li class="o5" style="top: 0px;"></li>
+						<li class="o6" style="top: 0px;"></li>
+						<li class="o7" style="top: 0px;"></li>
+					</ul>
+					<div class="tabBody">
+						<div class="bods cur">
+							<p><img src=""></p>
+							<p class="cleanH15"></p>
+							<div class="suntt"><span><i></i>聚风尚主推品牌<i></i></span></div>
+							<div class="sunBrand">
+								<ul>
+									<li>
+										<a href="http://www.jufengshang.com/tissot/" target="_blank"><img src=""></a>
+									</li>
+									<li>
+										<a href="http://www.jufengshang.com/longines/" target="_blank"><img src=""></a>
+									</li>
+									<li>
+										<a href="http://www.jufengshang.com/guess/" target="_blank"><img src=""></a>
+									</li>
+									<li>
+										<a href="http://www.jufengshang.com/ck/" target="_blank"><img src=""></a>
+									</li>
+									<li>
+										<a href="http://www.jufengshang.com/coach/" target="_blank"><img src=""></a>
+									</li>
+									<li>
+										<a href="http://www.jufengshang.com/laco/" target="_blank"><img src=""></a>
+									</li>
+									<li>
+										<a href="http://www.jufengshang.com/kronsegler/" target="_blank"><img src=""></a>
+									</li>
+									<li>
+										<a href="http://www.jufengshang.com/junghans/" target="_blank"><img src=""></a>
+									</li>
+									<li>
+										<a href="http://www.jufengshang.com/tudor/" target="_blank"><img src=""></a>
+									</li>
+									<li>
+										<a href="http://www.jufengshang.com/zeppelin/" target="_blank"><img src=""></a>
+									</li>
+
+									<li>
+										<a href="http://www.jufengshang.com/mido/" target="_blank"><img src=""></a>
+									</li>
+									<li>
+										<a href="#" target="_blank"><img src=""></a>
+									</li>
+									<li>
+										<a href="http://www.jufengshang.com/dg/" target="_blank"><img src=""></a>
+									</li>
+									<li>
+										<a href="http://www.jufengshang.com/titoni/" target="_blank"><img src=""></a>
+									</li>
+									<li>
+										<a href="http://www.jufengshang.com/omega/" target="_blank"><img src=""></a>
+									</li>
+									<li>
+										<a href="http://www.jufengshang.com/swatch/" target="_blank"><img src=""></a>
+									</li>
+									<li>
+										<a href="http://www.jufengshang.com/casio/" target="_blank"><img src=""></a>
+									</li>
+									<li>
+										<a href="http://www.jufengshang.com/junkers/" target="_blank"><img src=""></a>
+									</li>
+									<li>
+										<a href="http://www.jufengshang.com/cartier/" target="_blank"><img src=""></a>
+									</li>
+									<li>
+										<a href="http://www.jufengshang.com/rolex/" target="_blank"><img src=""></a>
+									</li>
+								</ul>
+								<p class="cleanH25"></p>
+							</div>
+							<div class="sunBrand_more">
+								<a target="_blank" href="/shoubiao/">查看所有品牌</a><img class="sunbrand_up" src=""></div>
+
+							<p class="cleanH25"></p>
+							<div class="suntt"><span><i></i>品牌授权书展示<i></i></span></div>
+							<div class="sunsq">
+								<p style="padding:20px 110px;">聚风尚名表商城先后获得朗坤、齐柏林、勇克士、坤格等多个世界名表品牌授权，并与之签订采购协议，达成长期战略合作关系。聚风尚所售商品均从品牌厂家、品牌代理商、专柜等正规渠道采购。我们对供应商公司资质进行严格审核，对供应商五证严加把控检查。</p>
+								<p style="text-align:center;"><img src=""></p>
+							</div>
+
+							<p class="cleanH25"></p>
+							<div class="suntt"><span><i></i>正品采购渠道<i></i></span></div>
+							<p class="cleanH25"></p>
+							<div>
+								<ul style="font-size:20px;">
+									<li style="width:400px;text-align:center;"><img src="">
+										<p>品牌厂家</p>
+									</li>
+									<li style="width:400px;text-align:center;"><img src="">
+										<p>品牌代理</p>
+									</li>
+									<li style="width:400px;text-align:center;"><img src="">
+										<p>品牌专柜</p>
+									</li>
+								</ul>
+
+								<p class="cleanH25" style="font-size:20px;">供应商五证及质检报告展示</p>
+								<p style="text-align:center;padding:20px 0;"><img src=""></p>
+
+							</div>
+						</div>
+						<div class="bods">
+							<p><img src=""></p>
+							<p class="cleanH15"></p>
+							<div class="suntt"><span><i></i>检验流程<i></i></span></div>
+							<ul style="padding:20px 0">
+								<li style="width:400px;text-align:center;"><img src=""></li>
+								<li style="width:400px;text-align:center;"><img src=""></li>
+								<li style="width:400px;text-align:center;"><img src=""></li>
+							</ul>
+							<p class="cleanH25"></p>
+
+							<div class="suntt"><span><i></i>发货流程<i></i></span></div>
+							<p class="cleanH25"></p>
+
+							<p style="font-size:25px;color:#a90000;text-align:center;">天梭、浪琴、坤格、朗坤等热销商品15点前付款，当天3个小时内即可完成发货（节假日除外）</p>
+							<p style="text-align:center;"><img src=""></p>
+						</div>
+						<div class="bods">
+							<p><img src=""></p>
+							<p class="cleanH15"></p>
+							<div class="suntt"><span><i></i>退换货流程<i></i></span></div>
+							<p style="padding:20px 110px;font-size:20px;">聚风尚商城为您提供在线客服、电话咨询的无障碍退换货服务，您只需点击聚风尚首页左下方的在线客服或拨打我们的全国服务热线<span style="color:#c90000">400-6288-910</span>，即可联系专业人员为您办理。</p>
+							<p style="background:#f0e9e9;padding:20px 0;text-align:center;"><img src=""></p>
+							<p class="cleanH15"></p>
+						</div>
+						<div class="bods">
+							<p><img src=""></p>
+							<p class="cleanH15"></p>
+							<div class="suntt"><span><i></i>专业客服团队<i></i></span></div>
+							<div style="padding:20px 160px;font-size:20px;">
+								我们的客服团队均经过层层筛选及严格考核，并具备专业的手表知识。
+								<p>我们重视您的每一个咨询、每一个留言、每一个评论，并为您提供最专业、贴心的服务。</p>
+								<p><img src=""></p>
+							</div>
+
+							<div class="suntt"><span><i></i>专业质检团队<i></i></span></div>
+							<div style="padding:20px 160px;font-size:20px;">
+								专业的质检团队，对每一只手表的质量、包装、保修卡等进行100%入库全检，与100%出库全检，确保每一只手表均以0瑕疵发出。
+							</div>
+							<p style="text-align:center;"><img src=""></p>
+
+							<div class="suntt"><span><i></i>专业摄影团队<i></i></span></div>
+							<p style="text-align:center;padding:20px 0"><img src=""></p>
+
+						</div>
+						<div class="bods">
+							<p><img src=""></p>
+							<p class="cleanH15"></p>
+
+							<ul class="cooperation">
+								<li>
+									<div class="suntt"><span><i></i>与15家国内知名银行签约合作<i></i></span></div>
+									<div style="padding:20px 50px;">
+										<p style="text-align:center;"><img src=""></p>
+										<p>聚风尚一直致力于为用户提供安全及优质的服务，先后与中国建设银行、中国工商银行、浦发银行等15家国内知名银行签约，保持良好的长期战略合作关系，每一笔支付均经过各大银行的严格审查，确保客户支付安全。</p>
+									</div>
+								</li>
+								<li>
+									<div class="suntt"><span><i></i>与中国海淀集团建立合作关系<i></i></span></div>
+									<div style="padding:20px 0px 20px 40px;">
+										<p style="text-align:center;"><img src="" style="display:block"></p>
+										<p style="text-align:center;padding-top:10px;">
+											<a href="http://www.jufengshang.com/zt/haidian/" target="_blank"><img src="" style="display:block"></a>
+										</p>
+										<p>为进一步优化客户的购物体验，聚风尚与中国海淀集团建立合作关系，</p>
+										<p>为购表用户定制“线上下单，线下自提”的个性化服务。</p>
+									</div>
+								</li>
+								<li style="height:800px;">
+									<div class="suntt"><span><i></i>与天籁钟行建立合作关系<i></i></span></div>
+									<div style="padding:20px 50px;">
+
+										<p>聚风尚与中国唯一专营世界顶级八音机械钟的连锁品牌天籁钟行合作，上架销售来自世界各地不同风格、工艺的古典机械钟，为客户带来尊贵的购物体验。</p>
+										<p style="text-align:center;padding-top:10px;"><img src="" style="display:block"></p>
+										<p style="text-align:center;">天籁钟行门店展示</p>
+									</div>
+								</li>
+								<li style="height:800px;">
+									<div class="suntt"><span><i></i>受邀进驻各大电商平台<i></i></span></div>
+									<div style="padding:20px 0px 20px 40px;">
+										<p>聚风尚的快速发展得到各大平台的关注，</p>
+										<p>并先后受邀进驻各大平台，建立聚风尚专营店。</p>
+										<p><img src="" style="display:block"></p>
+										<p style="text-align:center;padding-top:10px;">中国建设银行善融商城</p>
+										<p><img src="" style="display:block"></p>
+										<p style="text-align:center;padding-top:10px;">360购物聚风尚商城</p>
+									</div>
+								</li>
+							</ul>
+
+						</div>
+						<div class="bods">
+							<p><img src=""></p>
+							<p class="cleanH15"></p>
+							<p style="padding:20px 30px;font-size:20px;">聚风尚商城成立于2010年8月，并凭借雄厚的实力，良好的口碑，以及“100%正品保障、全球联保、无限额免运费、 银行分期付款”等优质服务，先后获得“中国网上零售诚信品牌100强”、“2011年度B2C明日之星TOP30大奖”、 “2012年最佳品牌奖”，并被权威媒体网站在“腕表行业网站影响力”评估中排名第一。
+							</p>
+							<div class="suntt"><span><i></i>信誉认证<i></i></span></div>
+							<p class="cleanH15"></p>
+							<p style="background:#f0e9e9;padding:20px 0;text-align:center;"><img src=""></p>
+							<p class="cleanH15"></p>
+						</div>
+						<div class="bods">
+							<p><img src=""></p>
+							<p class="cleanH15"></p>
+							<ul class="potolis">
+								<li><img src=""></li>
+								<li><img src=""></li>
+								<li><img src=""></li>
+								<li><img src=""></li>
+								<li><img src=""></li>
+								<li><img src=""></li>
+								<li><img src=""></li>
+								<li><img src=""></li>
+								<li><img src=""></li>
+								<li><img src=""></li>
+								<li><img src=""></li>
+							</ul>
+							<p class="cleanH15"></p>
+						</div>
+					</div>
+					<p>
+						<a target="_blank" href="http://www.jufengshang.com/zp.html"><img src=""></a>
+					</p>
+				</div>
+			</div>
+			<div class="sectionBody CommentBody" style="display: block;">
+				<div class="Relevant">
+					<div class="PraiseRate">
+						<b>100%</b>
+						<p>好评率</p>
+					</div>
+					<div class="Score">
+						<dl>
+							<dt>好评</dt>
+							<dd><span><i style="width:100%"></i></span></dd>
+						</dl>
+						<dl>
+							<dt>中评</dt>
+							<dd><span><i style="width:0%"></i></span></dd>
+						</dl>
+						<dl>
+							<dt>差评</dt>
+							<dd><span><i style="width:0%"></i></span></dd>
+						</dl>
+					</div>
+					<div class="impression">
+						<dl>
+							<dt>客户印象</dt>
+							<dd>
+								<span>质量：<b>100%</b> 非常好</span>
+								<span>性价比：<b>100%</b> 高</span>
+								<span>款式：<b>100%</b> 好看</span>
+								<span>色差：<b>100%</b> 无色差</span>
+							</dd>
+						</dl>
+					</div>
+					<div class="immediately">
+						<p>我购买过此商品</p>
+						<a href="javascript:;">立即评价</a>
+					</div>
+					<p class="clean"></p>
+				</div>
+
+				<p class="cleanH15"></p>
+				<div class="commentInput">
+					<ul class="aside">
+						<li>用户类型</li>
+						<li>印象标签</li>
+						<li class="end">发表评论</li>
+					</ul>
+					<div class="body">
+						<form action="javascript:;" method="post" name="form1">
+							<div class="user" id="UserComment"><label for="user_name_radio_0"><input name="islogin" type="radio" id="user_name_radio_0" value="0" checked=""> 匿名用户</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请先
+								<a href="/logins/index/">登录</a> 或者
+								<a href="/logins/register/">注册</a>
+								<a title="我的订单" href="/user/myorder" rel="nofollow">我的订单</a>
+							</div>
+							<div class="impression">
+								<label for="tags_1"><input type="checkbox" value="1" id="tags_1" name="tags"> 质量非常好</label>
+								<label for="tags_2"><input type="checkbox" value="2" id="tags_2" name="tags"> 性价比高</label>
+								<label for="tags_3"><input type="checkbox" value="3" id="tags_3" name="tags"> 款式好看</label>
+								<label for="tags_4"><input type="checkbox" value="4" id="tags_4" name="tags"> 无色差</label>
+							</div>
+							<div class="iconentDiv"><textarea class="InputConent" id="content" name="content"></textarea></div>
+							<div class="InputAction" style="display: block;">
+								<span style="padding-right:10px;" id="region"></span> 验证码：
+								<input type="text" class="imgcode" id="imgcode" name="imgcode">
+								<img align="absMiddle" src="" title="点击刷新验证码" onclick="goods.changeImgcode()" style="CURSOR: pointer;" class="checkcode" id="checkcode">
+
+								<input type="hidden" name="id_value" value="157378" id="id_value">
+								<input type="hidden" value="" id="user_name" name="user_name">
+								<input type="submit" class="SubmitComment" value="提交评论" id="button" name="button">
+							</div>
+						</form>
+					</div>
+					<div class="beak"></div>
+				</div>
+				<p class="cleanH15"></p>
+				<div class="commentList">
+					<div class="title">
+						<ul class="tab">
+							<li class="all" data-value="comment" data="id_value=330031">全部评价</li>
+							<li data-value="comment" data="id_value=330031&amp;rank=good">好评(0)</li>
+							<li data-value="comment" data="id_value=330031&amp;rank=mid">中评(0)</li>
+							<li data-value="comment" data="id_value=330031&amp;rank=bad">差评(0)</li>
+							<li data-value="comment" data="id_value=330031&amp;img=1">晒单</li>
+							<li class="consultation cur" data-value="consultation" data="330031">咨询</li>
+						</ul>
+					</div>
+					<div class="commentSectionBody">
+						<ul class="comment" id="commentBodyList">
+							本商品暂无评价。
+						</ul>
+					</div>
+					<div class="consultationSectionBody cur">
+						<div class="title">
+							<div class="publish">
+								<a href="javascript:;" onclick="elementToggle('.consultationInput')">发表咨询</a>
+							</div>
+							<ul class="contab">
+								<li data="goods_id=330031" class="cur">全部咨询</li>
+								<li data="goods_id=330031&amp;consulting_type=1">商品咨询</li>
+								<li data="goods_id=330031&amp;consulting_type=2">库存配送</li>
+								<li data="goods_id=330031&amp;consulting_type=3">支付</li>
+								<li data="goods_id=330031&amp;consulting_type=4">发票保修</li>
+								<li class="end" data="goods_id=330031&amp;consulting_type=5">促销及赠品</li>
+							</ul>
+							<div class="search">
+								<form onsubmit="" method="get" name="searchForm" action="">
+									<input type="text" value="搜索" name="keywords">
+									<input type="submit" value="搜索">
+								</form>
+							</div>
+						</div>
+						<p class="cleanH15"></p>
+						<div class="consultationInput">
+							<ul class="aside">
+								<li class="state">声 明</li>
+								<li>咨询类型</li>
+								<li>聚风尚承诺</li>
+								<li>功能咨询</li>
+								<li class="end">发表评论</li>
+							</ul>
+							<div class="body">
+								<form onsubmit="return goods.submitZiXun(this,'/goods/zixun_add');" action="javascript:;" method="post" name="form1">
+									<div class="state">您可在购买前对产品包装、颜色、运输、库存等方面进行咨询，我们有专人进行回复！因厂家随时会更改一些产品的包装、颜色、产地等参数，所以该回复仅在当时对提问者有效，其他网友仅供参考！咨询回复的工作时间为：周一至周五，9:00至18:00，请耐心等待工作人员回复。</div>
+									<div class="subject">
+										<label for="consulting_type_1"><input type="radio" value="1" id="consulting_type_1" name="consulting_type" checked="checked"> 商品咨询</label>
+										<label for="consulting_type_2"><input type="radio" value="2" id="consulting_type_2" name="consulting_type"> 库存及配送</label>
+										<label for="consulting_type_3"><input type="radio" value="3" id="consulting_type_3" name="consulting_type"> 支付问题</label>
+										<label for="consulting_type_4"><input type="radio" value="4" id="consulting_type_4" name="consulting_type"> 发票及保修</label>
+										<label for="consulting_type_5"><input type="radio" value="5" id="consulting_type_5" name="consulting_type"> 促销及赠品</label>
+									</div>
+									<div class="subject"><span style="color:#dc6d3c;">商品均为原装正品行货，自带机打发票，严格执行国家三包政策，享受全国联保服务。</span></div>
+									<div class="subject">咨询商品功能建议您拨打各品牌的官方客服电话，以便获得更准确的信息。</div>
+									<div class="iconentDiv"><textarea class="InputConent" id="quiz_content" name="quiz_content"></textarea></div>
+									<div class="InputAction" style="display: block;">
+										<span style="padding-right:10px;" id="zixunregion"></span> 验证码：
+										<input type="text" class="imgcode" id="quiz_imgcode" name="quiz_imgcode">
+										<img align="absMiddle" src="" title="点击刷新验证码" onclick="goods.changeImgcode()" style="CURSOR: pointer;" class="checkcode" id="checkcode">
+
+										<input type="hidden" name="goods_id" value="330031" id="goods_id">
+										<input type="submit" class="SubmitComment" value="提交咨询" id="button" name="button">
+									</div>
+									<div class="beak"></div>
+								</form>
+							</div>
+						</div>
+						<div class="consultationList">
+							<ul class="list" id="ConsultationBodyList">
+
+							</ul>
+							<div class="commentPage">
+								<div class="page"><span><b>首页</b></span><span><b>&lt; 上一页</b></span><span class="hover">1</span><span><b>下一页 &gt;</b></span><span><b>末页</b></span></div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="sectionBody" style="display: none; padding: 0px;">
+				<img src="" class="lazy" style="display: inline;"><img data-original="/images/2014/shfw2.jpg" src="" class="lazy" style="display: inline;"><img src="" class="lazy" style="display: inline;">
+			</div>	
+		</section>
+		<div id="simple">
+				<div class="floatbar">
+					<div class="erweima_right"><img src="../images/kf_weixin.png" /></div>
+					<a href="javascript:;"><img src="../images/float_pic01.png" /></a>
+					<a id="weixin" href="javascript:;"><img src="../images/float_pic02.png" /></a>
+					<a href="#"><img src="../images/float_pic03.png" /></a>
+				</div>
+		</div>
+		<script type="text/javascript" src="../js/goods.js" ></script>
+	</body>
+</html>
